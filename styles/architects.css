@@ -105,13 +105,34 @@ main > section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
+    
 }
-.our-features{
-    margin-left: 130px;
-    max-width: 530px;
-}
+
 #quick-list{
     font-weight: 500;
+}
+/* features section related style */
+
+.features{
+    gap: 140px;
+}
+
+#feature-section-title{
+    border-left:5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.features-card .features-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
 }
 
 /* some our facts related styles  */
@@ -121,6 +142,10 @@ main > section{
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
 }
 .fact-card{
     border: 1px solid #FF900E;
@@ -143,6 +168,21 @@ main > section{
     font-weight: 600;
     margin-top: 10px;
 }
+/* sponsor related styles */
+.sponspors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponser-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 24px;
+    
+}
+.sponser-companies img{
+    filter: grayscale(100%);
+}
 
 
 /* responsive media query */
@@ -152,8 +192,20 @@ main > section{
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
-        grid-template-columns: repeat(1,1fr);
+    .team-img-container,
+    .facts-container,
+    .sponser-companies{
+        grid-template-columns: 1fr;
+       
+    }
+
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .sponser-companies{
+        gap: 50px;
+        justify-items: center;
     }
     .our-features{
         margin-left: 20px;
@@ -169,4 +221,10 @@ main > section{
         .our-features{
             margin: 50px auto;
         }
+        .sponser-companies,.facts-container{
+            grid-template-columns: repeat(2,1fr);
+            gap: 50px;
+            justify-items: center;
+        }
     }
+
