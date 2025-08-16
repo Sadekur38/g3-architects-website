@@ -198,8 +198,21 @@ main > section{
 .sponser-companies img{
     filter: grayscale(100%);
 }
+/* footer related styles */
+.footer-des{
+    text-align: center;  
+    margin: 20px auto; 
+    border-radius: 8px;
+    font-size: 1.25rem;
+    background-color: #FFF4E7;
+    padding: 15px; 
+    gap: 20px;
+    max-width: 1400px;
+    width: 100%;
+   
+}
 
-
+ 
 /* responsive media query */
  @media screen and (max-width: 576px){
     .navber,
