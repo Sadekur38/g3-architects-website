@@ -218,7 +218,8 @@ main > section{
     .navber,
     .nav-links,
     .features
-    .teams{
+    .teams
+    .footer-des{
         flex-direction: column;
     }
     .team-img-container,
@@ -243,6 +244,13 @@ main > section{
     #experinece-badge{
         margin-top: 20px;
         margin-left: 20px;
+    }
+    .footer-des{
+    padding: 10px;               
+    font-size: 13px;          
+    width: 95%;
+    margin: 0 auto;  
+    
     }
  }
     /* medium size device */
